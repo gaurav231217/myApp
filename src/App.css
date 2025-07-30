@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app {
+  transition: all 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 200px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* Theme 1 - Minimalist */
+.theme1 {
+  background: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+/* Theme 2 - Dark with Sidebar */
+.theme2 {
+  background: #121212;
+  color: #f5f5f5;
+  font-family: 'Georgia', serif;
+  display: flex;
+  flex-direction: row;
+}
+.theme2 .header {
+  flex-direction: column;
+  width: 250px;
+  background: #1e1e1e;
+  height: 100vh;
+}
+.theme2 .content {
+  padding: 2rem;
+  flex: 1;
+}
+
+/* Theme 3 - Colorful Card Layout */
+
+.theme3 {
+  background: #f0f8ff;
+  color: #333;
+  font-family: 'Pacifico', cursive;
+}
+.theme3 .cards 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.theme3 .card {
+  background: #ffe4e1;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+/* Theme 2 - Dark with Sidebar */
+.theme2 {
+  background: #121212;
+  color: #f5f5f5;
+  font-family: 'Georgia', serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.theme2 .header {
+  flex-direction: column;
+  width: 250px;
+  background: #1e1e1e;
+  height: 100vh;
+  color: white;
+}
+
+.theme2 .content {
+  padding: 2rem;
+  flex: 1;
+}
+
+/* Fix card readability in dark mode */
+.theme2 .card {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #f5f5f5;
+}
+.theme2 .header select {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #2a2a2a;
+  color: #f5f5f5;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+.theme1 .header select {
+  background: #fff;
+  color: #333;
+  border: 1px solid #aaa;
+}
+.theme3 .header select {
+  background: #ffe4e1;
+  color: #333;
+  font-family: 'Pacifico', cursive;
+  border: 2px solid #ff69b4;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
