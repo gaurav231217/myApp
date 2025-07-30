@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://gaurav231217.github.io/myApp",
+  "homepage": "https://gaurav231217.github.io/ThemeSwitcher",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
